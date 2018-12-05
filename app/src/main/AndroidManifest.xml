@@ -19,6 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SchemaFilterActivity" >
+            <!-- Schame -->
+            <intent-filter>
+                <data
+                    android:host="app.hzq.com"
+                    android:scheme="lcs"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

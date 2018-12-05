@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/router-annotation/router-annotation.iml" filepath="$PROJECT_DIR$/router-annotation/router-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/router-api/router-api.iml" filepath="$PROJECT_DIR$/router-api/router-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/router-compiler/router-compiler.iml" filepath="$PROJECT_DIR$/router-compiler/router-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
     </modules>
   </component>
 </project>

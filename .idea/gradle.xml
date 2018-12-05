@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/router-annotation" />
             <option value="$PROJECT_DIR$/router-api" />
             <option value="$PROJECT_DIR$/router-compiler" />
+            <option value="$PROJECT_DIR$/user" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

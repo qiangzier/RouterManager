@@ -8,8 +8,9 @@ import android.widget.TextView;
 import com.hzq.router_annotation.facade.annotation.Autowired;
 import com.hzq.router_annotation.facade.annotation.Route;
 import com.hzq.routerapi.core.RouterManager;
+import com.hzq.user.IUserService;
 
-@Route(path = "/test/main")
+@Route(path = "/service/test/main")
 public class OtherActivity extends AppCompatActivity {
 
     @Autowired

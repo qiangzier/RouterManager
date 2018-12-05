@@ -5,6 +5,7 @@ import android.app.Application;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v4.app.ActivityCompat;
@@ -15,6 +16,7 @@ import com.hzq.routerapi.exception.InitException;
 import com.hzq.routerapi.exception.NoRouteFoundException;
 import com.hzq.routerapi.log.DefaultLogger;
 import com.hzq.routerapi.log.ILogger;
+import com.hzq.routerapi.util.Consts;
 
 /**
  * Created by hezhiqiang on 2018/11/20.
@@ -62,6 +64,14 @@ public class RouterManager {
             throw new HandlerException("Parameter is invalid!");
         } else {
             return build(path,extractGroup(path));
+        }
+    }
+
+    public Postcard build(Uri uri) {
+        if(null == uri || TextUtils.isEmpty(uri.toString())) {
+            throw new HandlerException(Consts.TAG + "Parameter invalid");
+        } else {
+            return new Postcard(uri.getPath(),extractGroup(uri.getPath()),uri,null);
         }
     }
 
@@ -113,7 +123,7 @@ public class RouterManager {
                 runInMainThread(new Runnable() {
                     @Override
                     public void run() {
-                        startActivity(requestCode,context,intent,postcard);
+                        startActivity(requestCode,currentContext,intent,postcard);
                     }
                 });
                 break;

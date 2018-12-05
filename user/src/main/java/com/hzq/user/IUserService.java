@@ -1,4 +1,4 @@
-package com.hzq.routermanager;
+package com.hzq.user;
 
 import com.hzq.routerapi.facade.template.IProvider;
 

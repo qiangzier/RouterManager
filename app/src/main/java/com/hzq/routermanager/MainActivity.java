@@ -1,5 +1,6 @@
 package com.hzq.routermanager;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.user_activity);
     }
 
     /**
@@ -27,11 +28,13 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void startSecondAction(View view) {
-        RouterManager.getInstance()
-                .build("/test/main")
-                .withString("username","qiangzi")
-                .withInt("userId",1234)
-                .withBoolean("isLogin",false)
-                .navigation(this);
+        Uri uri = Uri.parse("lcs://app.hzq.com/test/main");
+        RouterManager.getInstance().build(uri).navigation();
+//        RouterManager.getInstance()
+//                .build("/test/main")
+//                .withString("username","qiangzi")
+//                .withInt("userId",1234)
+//                .withBoolean("isLogin",false)
+//                .navigation(this);
     }
 }
