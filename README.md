@@ -9,4 +9,4 @@ Android 路由框架
 
 3、获取Fragment
 
-项目源码分析文档：[动手撸一个ARouter (ARouter源码分析)](https://juejin.im/user/57504074816dfa0054063d8a/posts)
+项目源码分析文档：[动手撸一个ARouter (ARouter源码分析)](https://juejin.im/post/5c077918f265da611e4d6fe4)
